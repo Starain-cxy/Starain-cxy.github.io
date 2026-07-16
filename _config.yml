@@ -1,1 +1,79 @@
+# ====================== 基础个人信息 ======================
+title: 陈星宇
+name: 陈星宇
+# 首页开篇文案对应简介
+description: >
+  你好，我是东华大学的一名本科生。
+  很希望和你讨论统计学。
+# 头像存放路径，证件照上传至 assets/img/avatar.jpg
+avatar: assets/img/avatar.jpg
 
+# 地理位置
+location: Songjiang District, Shanghai, China
+
+# 网站域名配置（你的个人主页地址）
+url: "https://Starain-cxy.github.io"
+baseurl: ""
+repository: Starain-cxy/Starain-cxy.github.io
+
+# 主题配置 al-folio 学术主题
+remote_theme: alshedivat/al-folio
+theme_mode: light # 可选 light / dark / auto
+mathjax: true # 开启数学公式，统计专业必备
+
+# ====================== 导航栏页面配置 ======================
+pages_list:
+  About: '/'
+  Education: 'education'
+  Research: 'research'
+  Competitions: 'competitions'
+  Projects: 'projects'
+  Honors: 'honors'
+  Experience: 'experience'
+  CV: 'cv'
+
+# ====================== 社交链接（GitHub + 知乎） ======================
+social_links:
+  - platform: github
+    username: Starain-cxy
+  - platform: zhihu
+    username: can-shu-81-56
+
+# ====================== 个人研究关键词 ======================
+keywords: Statistics, Conformal Prediction, Prediction-Powered Inference, Time Series Forecasting, Data Mining, Mathematical Modeling, Python, MATLAB, Java, LaTeX
+
+# ====================== 专业高分课程（教育页展示） ======================
+courses:
+  - name: 数学分析
+    score: 97
+  - name: 高等代数
+    score: 94
+  - name: 数理统计
+    score: 98
+  - name: 回归分析
+    score: 99
+  - name: 随机过程
+    score: 97
+  - name: 数据挖掘
+    score: 99
+
+# ====================== 技能标签展示 ======================
+skills:
+  Programming: Python, Java, MATLAB
+  Typesetting & Writing: LaTeX, Markdown
+  Office Tools: Word, Excel, PowerPoint
+  Language: CET-4(604), CET-6(516), Fluent reading of English academic papers
+
+# ====================== 学术文献库（后续存放科研论文） ======================
+bibtex_bibfiles:
+  - assets/bib/publications.bib
+
+# ====================== 底部版权信息 ======================
+footer_text: >
+  © 2026 陈星宇. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme. Hosted on GitHub Pages.
+
+# 关闭统计、评论模块，保持页面干净
+comments: false
+analytics:
+  google:
+    id:
