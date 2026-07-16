@@ -1,7 +1,7 @@
 # ====================== 基础个人信息 ======================
 title: 陈星宇
 name: 陈星宇
-# 首页开篇文案对应简介
+# 首页开篇文案
 description: >
   你好，我是东华大学的一名本科生。
   很希望和你讨论统计学。
@@ -11,7 +11,7 @@ avatar: assets/img/avatar.jpg
 # 地理位置
 location: Songjiang District, Shanghai, China
 
-# 网站域名配置（你的个人主页地址）
+# 网站域名配置
 url: "https://Starain-cxy.github.io"
 baseurl: ""
 repository: Starain-cxy/Starain-cxy.github.io
@@ -32,12 +32,13 @@ pages_list:
   Experience: 'experience'
   CV: 'cv'
 
-# ====================== 社交链接（GitHub + 知乎） ======================
+# ====================== 社交链接（已修改知乎显示名称与链接） ======================
 social_links:
   - platform: github
     username: Starain-cxy
-  - platform: zhihu
-    username: can-shu-81-56
+  - name: 下菜的饭
+    url: https://www.zhihu.com/people/can-shu-81-56
+    icon: fab fa-zhihu
 
 # ====================== 个人研究关键词 ======================
 keywords: Statistics, Conformal Prediction, Prediction-Powered Inference, Time Series Forecasting, Data Mining, Mathematical Modeling, Python, MATLAB, Java, LaTeX
