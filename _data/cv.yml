@@ -1,0 +1,38 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: 陈星宇
+    - name: Languages
+      value: 中文、英语
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.S. in Statistics
+      institution: Donghua University
+      year: 2022 - 2026
+      description:
+        - GPA 等信息可在此添加
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Statistical Inference
+      items:
+        - Conformal Prediction
+        - Prediction-Powered Inference
+    - title: Data Science
+      items:
+        - Time Series Forecasting
+        - Data Mining
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items: Python, Java, MATLAB
+    - title: Typesetting
+      items: LaTeX, Markdown
+    - title: Language
+      items: CET-4(604), CET-6(516)
