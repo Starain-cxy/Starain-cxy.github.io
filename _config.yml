@@ -31,6 +31,22 @@ plugins:
 theme_mode: light # 可选 light / dark / auto
 mathjax: true # 开启数学公式，统计专业必备
 
+# ====================== 分页配置（jekyll-paginate-v2） ======================
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  sort_field: 'date'
+  sort_reverse: true
+
+# ====================== 学术引用样式（jekyll-scholar） ======================
+scholar:
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+
 # ====================== 社交链接（已修改知乎显示名称与链接） ======================
 social_links:
   - platform: github
