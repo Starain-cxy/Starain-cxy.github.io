@@ -31,7 +31,6 @@ plugins:
   - jekyll-socials
   - jekyll-archives-v2
   - jekyll-link-attributes
-  - jekyll-cache-bust
   - jekyll-get-json
   - jemoji
 
@@ -39,6 +38,8 @@ plugins:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: false
+back_to_top: true
+max_width: 930px
 
 # ====================== 功能开关 ======================
 enable_math: true
@@ -57,6 +58,147 @@ enable_openpanel_analytics: false
 # 关闭需要外部工具的功能
 imagemagick:
   enabled: false
+
+# ====================== 第三方 CDN 库配置 ======================
+third_party_libraries:
+  download: false
+  jquery:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    integrity:
+      js: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    version: "3.6.0"
+  mdb:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css"
+      js: "https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js"
+    integrity:
+      css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+      js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+    version: "4.20.0"
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+  masonry:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity:
+      js: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+    version: "4.2.2"
+  imagesloaded:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"
+    integrity:
+      js: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+    version: "5.0.0"
+  medium_zoom:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"
+    integrity:
+      js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+    version: "1.1.0"
+  mathjax:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+    integrity:
+      js: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
+    version: "3.2.2"
+  polyfill:
+    url:
+      js: "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"
+    version: "3"
+  bootstrap-table:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.css"
+      js: "https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.js"
+    integrity:
+      css: "sha256-uRX+PiRTR4ysKFRCykT8HLuRCub26LgXJZym3Yeom1c="
+      js: "sha256-4rppopQE9POKfukn2kEvhJ9Um25Cf6+IDVkARD0xh78="
+    version: "1.22.4"
+  leaflet:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css"
+      js: "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"
+    integrity:
+      css: "sha256-q9ba7o845pMPFU+zcAll8rv+gC+fSovKsOoNQ6cynuQ="
+      js: "sha256-MgH13bFTTNqsnuEoqNPBLDaqxjGH+lCpqrukmXc8Ppg="
+    version: "1.9.4"
+  d3:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"
+    integrity:
+      js: "sha256-1rA678n2xEx7x4cTZ5x4wpUCj6kUMZEZ5cxLSVSFWxw="
+    version: "7.8.5"
+  mermaid:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"
+    integrity:
+      js: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="
+    version: "10.7.0"
+  diff2html:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/diff2html@3.4.47/bundles/css/diff2html.min.css"
+      js: "https://cdn.jsdelivr.net/npm/diff2html@3.4.47/bundles/js/diff2html-ui.min.js"
+    integrity:
+      css: "sha256-IMBK4VNZp0ivwefSn51bswdsrhk0HoMTLc2GqFHFBXg="
+      js: "sha256-eU2TVHX633T1o/bTQp6iIJByYJEtZThhF9bKz/DcbbY="
+    version: "3.4.47"
+  highlightjs:
+    url:
+      css:
+        light: "https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css"
+        dark: "https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css"
+    integrity:
+      css:
+        light: "sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY="
+        dark: "sha256-nyCNAiECsdDHrr/s2OQsp5l9XeY2ZJ0rMepjCT2AkBk="
+    version: "11.9.0"
+  chartjs:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+    integrity:
+      js: "sha256-0q+JdOlScWOHcunpUk21uab1jW7C1deBQARHtKMcaB4="
+    version: "4.4.1"
+  echarts:
+    url:
+      js:
+        library: "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"
+    integrity:
+      js:
+        library: "sha256-QvgynZibb2U53SsVu98NggJXYqwRL7tg3FeyfXvPOUY="
+    version: "5.5.0"
+  pseudocode:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.css"
+      js: "https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
+    integrity:
+      css: "sha256-VwMV//xgBPDyRFVSOshhRhzJRDyBmIACniLPpeXNUdc="
+      js: "sha256-aVkDxqyzrB+ExUsOY9PdyelkDhn/DfrjWu08aVpqNlo="
+    version: "2.4.1"
+  vega:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/vega@5.27.0/build/vega.min.js"
+    integrity:
+      js: "sha256-Yot/cfgMMMpFwkp/5azR20Tfkt24PFqQ6IQS+80HIZs="
+    version: "5.27.0"
+  vega-lite:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/vega-lite@5.16.3/build/vega-lite.min.js"
+    integrity:
+      js: "sha256-TvBvIS5jUN4BSy009usRjNzjI1qRrHPYv7xVLJyjUyw="
+    version: "5.16.3"
+  vega-embed:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/vega-embed@6.24.0/build/vega-embed.min.js"
+    integrity:
+      js: "sha256-FPCJ9JYCC9AZSpvC/t/wHBX7ybueZhIqOMjpWqfl3DU="
+    version: "6.24.0"
+  plotly:
+    url:
+      js: "https://cdn.jsdelivr.net/npm/plotly.js@3.0.1/dist/plotly.min.js"
+    integrity:
+      js: "sha256-oy6Be7Eh6eiQFs5M7oXuPxxm9qbJXEtTpfSI93dW16Q="
+    version: "3.0.1"
 
 # ====================== 社交链接 ======================
 github_username: Starain-cxy

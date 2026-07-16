@@ -18,7 +18,6 @@ group :jekyll_plugins do
   gem "jekyll-socials"
   gem "jekyll-archives-v2"
   gem "jekyll-link-attributes"
-  gem "jekyll-cache-bust"
   gem "jekyll-get-json"
   gem "jemoji"
   gem "classifier-reborn"
