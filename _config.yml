@@ -18,19 +18,18 @@ repository: Starain-cxy/Starain-cxy.github.io
 
 # 主题配置 al-folio 学术主题
 remote_theme: alshedivat/al-folio
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-scholar
+  - jekyll-email-protect
+
 theme_mode: light # 可选 light / dark / auto
 mathjax: true # 开启数学公式，统计专业必备
-
-# ====================== 导航栏页面配置 ======================
-pages_list:
-  About: '/'
-  Education: 'education'
-  Research: 'research'
-  Competitions: 'competitions'
-  Projects: 'projects'
-  Honors: 'honors'
-  Experience: 'experience'
-  CV: 'cv'
 
 # ====================== 社交链接（已修改知乎显示名称与链接） ======================
 social_links:
