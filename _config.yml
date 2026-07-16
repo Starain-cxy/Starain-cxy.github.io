@@ -29,6 +29,11 @@ plugins:
   - jekyll-scholar
   - jekyll-email-protect
   - jekyll-socials
+  - jekyll-archives-v2
+  - jekyll-link-attributes
+  - jekyll-cache-bust
+  - jekyll-get-json
+  - jemoji
 
 # ====================== 布局设置 ======================
 navbar_fixed: true

@@ -1,6 +1,12 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+gem "webrick"
+gem "csv"
+gem "base64"
+gem "logger"
+gem "observer"
+gem "ostruct"
 
 group :jekyll_plugins do
   gem "jekyll-remote-theme"
@@ -10,6 +16,10 @@ group :jekyll_plugins do
   gem "jekyll-scholar"
   gem "jekyll-email-protect"
   gem "jekyll-socials"
+  gem "jekyll-archives-v2"
+  gem "jekyll-link-attributes"
+  gem "jekyll-cache-bust"
+  gem "jekyll-get-json"
+  gem "jemoji"
+  gem "classifier-reborn"
 end
-
-gem "webrick"
