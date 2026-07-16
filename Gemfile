@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-scholar"
   gem "jekyll-email-protect"
+  gem "jekyll-socials"
 end
 
 gem "webrick"

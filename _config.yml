@@ -28,6 +28,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-scholar
   - jekyll-email-protect
+  - jekyll-socials
 
 # ====================== 布局设置 ======================
 navbar_fixed: true
