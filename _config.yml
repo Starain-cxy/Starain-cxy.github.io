@@ -1,11 +1,9 @@
 # ====================== 基础个人信息 ======================
 title: 陈星宇
-name: 陈星宇
-# 首页开篇文案
+first_name: 星宇
+last_name: 陈
 description: >
-  你好，我是东华大学的一名本科生。
-  很希望和你讨论统计学。
-# 头像存放路径，证件照上传至 assets/img/avatar.jpg
+  你好，我是东华大学的一名本科生。很希望和你讨论统计学。
 avatar: assets/img/avatar.jpg
 
 # 地理位置
@@ -16,47 +14,51 @@ url: "https://Starain-cxy.github.io"
 baseurl: ""
 repository: Starain-cxy/Starain-cxy.github.io
 
-# 主题配置 al-folio 学术主题
-remote_theme: alshedivat/al-folio
+# 主题配置 — 固定到 v0.16.3（最新支持 remote_theme 的版本）
+remote_theme: alshedivat/al-folio@v0.16.3
 
+lang: zh-CN
+icon: 📊
+
+# 插件
 plugins:
   - jekyll-remote-theme
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-scholar
   - jekyll-email-protect
+  - jekyll-archives-v2
+  - jekyll-link-attributes
 
-theme_mode: light # 可选 light / dark / auto
-mathjax: true # 开启数学公式，统计专业必备
+# ====================== 布局设置 ======================
+navbar_fixed: true
+footer_fixed: true
+search_enabled: false
 
-# ====================== 分页配置（jekyll-paginate-v2） ======================
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  sort_field: 'date'
-  sort_reverse: true
+# ====================== 功能开关 ======================
+enable_math: true
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_masonry: true
+enable_tooltips: false
+enable_medium_zoom: true
+enable_progressbar: true
+enable_google_analytics: false
+enable_cronitor_analytics: false
+enable_pirsch_analytics: false
+enable_openpanel_analytics: false
 
-# ====================== 学术引用样式（jekyll-scholar） ======================
-scholar:
-  style: apa
-  locale: en
-  sort_by: year
-  order: descending
+# 关闭需要外部工具的功能
+imagemagick:
+  enabled: false
 
-# ====================== 社交链接（已修改知乎显示名称与链接） ======================
-social_links:
-  - platform: github
-    username: Starain-cxy
-  - name: 下菜的饭
-    url: https://www.zhihu.com/people/can-shu-81-56
-    icon: fab fa-zhihu
+# ====================== 社交链接 ======================
+github_username: Starain-cxy
 
 # ====================== 个人研究关键词 ======================
-keywords: Statistics, Conformal Prediction, Prediction-Powered Inference, Time Series Forecasting, Data Mining, Mathematical Modeling, Python, MATLAB, Java, LaTeX
+keywords: Statistics, Conformal Prediction, Prediction-Powered Inference, Time Series Forecasting, Data Mining, Mathematical Modeling
 
 # ====================== 专业高分课程（教育页展示） ======================
 courses:
@@ -80,16 +82,65 @@ skills:
   Office Tools: Word, Excel, PowerPoint
   Language: CET-4(604), CET-6(516), Fluent reading of English academic papers
 
-# ====================== 学术文献库（后续存放科研论文） ======================
+# ====================== 学术文献库 ======================
+scholar:
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: publications.bib
+  sort_by: year
+  order: descending
+  group_by: year
+  group_order: descending
+
 bibtex_bibfiles:
   - assets/bib/publications.bib
+
+# ====================== 收藏集 ======================
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+  projects:
+    output: true
+
+# ====================== 分页 ======================
+pagination:
+  enabled: true
+  per_page: 5
+
+blog_name: Blog
+blog_description: 个人博客
+
+# ====================== Jekyll 设置 ======================
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ["_pages"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+sass:
+  style: compressed
 
 # ====================== 底部版权信息 ======================
 footer_text: >
   © 2026 陈星宇. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme. Hosted on GitHub Pages.
 
-# 关闭统计、评论模块，保持页面干净
-comments: false
+# 关闭统计、评论模块
 analytics:
   google:
     id:
