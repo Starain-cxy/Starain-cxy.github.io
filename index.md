@@ -5,7 +5,7 @@ subtitle: Undergraduate at Donghua University
 
 profile:
   align: right
-  image: avatar.jpg
+  image: avatar.png
 
 news: false
 selected_papers: false
