@@ -2,22 +2,49 @@
 layout: page
 title: Projects
 permalink: /projects/
-nav: false
-nav_order: 5
+nav: true
+nav_order: 3
 ---
+
+## Selected projects
+
+### Polynomial applications of Yoshino tensor integral decomposition
+
+**Shanghai Undergraduate Innovation Project · Team Lead · May 2024–June 2025**
+
+Led an undergraduate research project on polynomial applications of Yoshino tensor integral decomposition,
+including literature study, mathematical derivation, and team coordination.
+
+### Multi-agent consensus
+
+**Sapling Program for Innovation Education · Team Lead · October–December 2024**
+
+Led a short research project on consensus problems in multi-agent systems and coordinated the modeling and
+analysis work.
+
+### Industrial Big Data and Intelligent Systems Honors Program
+
+**Program Member · December 2024–present**
+
+Selected for Donghua University's honors program focused on industrial big data, intelligent systems, and
+interdisciplinary problem solving.
 
 ## 项目经历
 
-### 项目一
+### Yoshino 张量积分解的多项式应用
 
-- **时间**：20XX.XX - 20XX.XX
-- **描述**：项目简要描述
-- **技术栈**：Python, LaTeX
+**上海市大学生创新项目 · 队长 · 2024.05–2025.06**
 
-### 项目二
+围绕 Yoshino 张量积分解的多项式应用开展本科生研究，负责文献学习、数学推导与团队协调。
 
-- **时间**：20XX.XX - 20XX.XX
-- **描述**：项目简要描述
-- **技术栈**：MATLAB, Python
+### 多智能体一致性研究
 
-> 更多项目请查看我的 [GitHub](https://github.com/Starain-cxy)
+**“树苗计划”创新育人项目 · 队长 · 2024.10–2024.12**
+
+研究多智能体系统中的一致性问题，负责建模、分析和项目推进。
+
+### 工业大数据与智能系统拔尖创新实验班
+
+**成员 · 2024.12–至今**
+
+入选东华大学工业大数据与智能系统拔尖创新实验班，参与工业数据、智能系统和交叉问题求解相关学习。
