@@ -1,7 +1,6 @@
 ---
 layout: about
 title: Home
-subtitle: Undergraduate in Statistics, Donghua University
 
 profile:
   align: right
@@ -12,16 +11,11 @@ selected_papers: false
 social: true
 ---
 
-<div class="language-switch" role="group" aria-label="Language">
-  <button type="button" class="active" data-language="zh" aria-pressed="true">中文</button>
-  <button type="button" data-language="en" aria-pressed="false">English</button>
-</div>
+{% include language-switch.html %}
 
 <div class="academic-home">
   <header class="home-intro">
     <div data-lang="zh">
-      <p class="home-kicker">统计学本科生 · 科研助理</p>
-      <h1>陈星宇</h1>
       <p class="home-lead">
         我是东华大学数学与统计学院统计学专业本科生。目前关注可靠统计推断、共形预测与
         Prediction-Powered Inference，也对时间序列、数据挖掘及其在真实问题中的应用保持兴趣。
@@ -29,8 +23,6 @@ social: true
       </p>
     </div>
     <div data-lang="en" hidden>
-      <p class="home-kicker">Statistics Undergraduate · Research Assistant</p>
-      <h1>Xingyu Chen</h1>
       <p class="home-lead">
         I am an undergraduate student in Statistics at Donghua University. My current interests include
         reliable statistical inference, conformal prediction, and prediction-powered inference, along with
@@ -97,7 +89,7 @@ social: true
   <section class="home-section">
     <h2><span data-lang="zh">教育经历</span><span data-lang="en" hidden>Education</span></h2>
     <div class="home-entry">
-      <p class="entry-date">2023–至今</p>
+      <p class="entry-date"><span data-lang="zh">2023–至今</span><span data-lang="en" hidden>2023–present</span></p>
       <div data-lang="zh">
         <h3>东华大学 · 数学与统计学院</h3>
         <p>统计学理学学士。GPA 4.12 / 5.00，专业排名 6 / 80（前 7%）。</p>
@@ -212,20 +204,3 @@ social: true
     </div>
   </section>
 </div>
-
-<script>
-  document.querySelectorAll('.language-switch button').forEach((button) => {
-    button.addEventListener('click', () => {
-      const language = button.dataset.language;
-      document.querySelectorAll('[data-lang]').forEach((element) => {
-        element.hidden = element.dataset.lang !== language;
-      });
-      document.querySelectorAll('.language-switch button').forEach((item) => {
-        const selected = item === button;
-        item.classList.toggle('active', selected);
-        item.setAttribute('aria-pressed', selected);
-      });
-      document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
-    });
-  });
-</script>
