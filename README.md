@@ -2,24 +2,24 @@
 
 基于 Jekyll + [al-folio](https://github.com/alshedivat/al-folio) 主题的学术个人主页，托管于 GitHub Pages。
 
+日常更新内容请查看 [网站维护指南](MAINTENANCE.md)。
+
 ## 项目结构
 
 ```
-├── _config.yml          # 站点配置文件
-├── _pages/              # 各个页面
-│   ├── about.md         # 首页/关于
-│   ├── education.md     # 教育背景
-│   ├── research.md      # 研究方向
-│   ├── competitions.md  # 竞赛经历
-│   ├── projects.md      # 项目经历
-│   ├── honors.md        # 荣誉奖项
-│   ├── experience.md    # 经历
-│   └── cv.md            # 简历
-├── _data/               # 数据文件
-│   └── cv.yml           # CV 结构化数据
+├── index.md             # 单页式主页
+├── _config.yml          # 站点配置
+├── _pages/
+│   ├── research.md      # Research 页面
+│   ├── projects.md      # Projects 页面
+│   └── cv.md            # 双语 CV 页面
+├── _includes/
+│   └── language-switch.html  # 共用语言按钮
 ├── assets/
-│   ├── img/             # 图片资源
-│   └── bib/             # BibTeX 文献库
+│   ├── css/main.scss    # 自定义样式
+│   ├── js/language-switch.js # 全站语言状态
+│   └── img/             # 头像等图片
+├── MAINTENANCE.md       # 网站维护指南
 ├── Gemfile              # Ruby 依赖
 └── README.md
 ```
